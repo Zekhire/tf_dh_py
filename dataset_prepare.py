@@ -208,7 +208,8 @@ def divide_train_test(readFolder, trainFolder, testFolder):
 
 
 
-dataRead = "../Data/MSCOCO_orig/"
+# dataRead = "../Data/MSCOCO_orig/"
+dataRead = "../Data/MSCOCO/train2014/"
 
 train320 = "../Data/320_240_train/"
 traintfRecordFLD = "../Data/128_train_tfrecords/"
@@ -223,7 +224,7 @@ _set_folders(test640)
 _set_folders(testtfRecordFLD)
 
 """ Divide dataset (87XXXX) to (10%) test and (90%) training samples"""
-#divide_train_test(dataRead, train320, test640)
+divide_train_test(dataRead, train320, test640)
 
 """
     Generate more Test Samples
